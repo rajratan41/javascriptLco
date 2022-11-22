@@ -1,1 +1,1 @@
-Learning JavaScript from LCO
+# Learning javascript from LearnCodeOnline.com
