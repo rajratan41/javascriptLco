@@ -3,18 +3,25 @@ class user {
         this.name = name;
         this.email = email;
     }
-    courseList = [];
+    #courseList = [];
 
     getInfo() {
         return { name: this.name, email: this.email };
     }
     enrollCourse(name) {
-        this.courseList.push(name);
+        this.#courseList.push(name);
     }
     getCourseList () {
-        return this.courseList;
+        return this.#courseList;
     }
 }
 
 
 module.exports = user;
+
+
+const rock = new user("rock", "roack@rock.com");
+console.log(rock.getInfo());
+rock.enrollCourse("Angular Bootcamp");
+console.log(rock.getCourseList());
+console.log(rock.CourseList);
